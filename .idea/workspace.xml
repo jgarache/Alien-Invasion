@@ -2,10 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3903bb7a-447a-4b1f-bb89-4e6cc2efa1a9" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/aline_invasion.py" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/images/ship.bmp" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/settings.py" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/ship.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aline_invasion.py" beforeDir="false" afterPath="$PROJECT_DIR$/aline_invasion.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
