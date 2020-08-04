@@ -93,6 +93,16 @@ class AlienInvasion:
         elif event.key == pygame.K_a:
             self.ship.moving_left = False
 
+    def _check_bullet_alien_collisions(self):
+        """Checks and deletes bullet-alien collisions"""
+        # Remove any bullet-alien collisions
+        collisions = pygame.sprite.groupcollide(self.bullets, self.aliens, True, True)
+
+        if not self.aliens:
+            # Destroy existing bullet and create new fleet
+            self.bullets.empty()
+            self._create_fleet()
+
     def _fire_bullet(self):
         """Create a new bullet and add it to the bullets group"""
         if len(self.bullets) < self.settings.bullet_allowed:
@@ -111,6 +121,9 @@ class AlienInvasion:
                 self.bullets.remove(bullet)
         # Print the number of bullets on the screen
         # print(len(self.bullets))
+
+        # Check bullet and alien collisions
+        self._check_bullet_alien_collisions()
 
     def _update_screen(self):
         # Draws background
